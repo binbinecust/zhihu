@@ -1,0 +1,48 @@
+{
+  "pages": ["pages/index/index", "pages/more/more", "pages/market/market", "pages/ideas/ideas", "pages/message/message", "pages/searchResult/searchResult"],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "知小乎",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#0084ff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "selectedIconPath": "assets/home-light.png",
+        "iconPath": "assets/home.png"
+      },
+      {
+        "selectedIconPath": "assets/find-light.png",
+        "iconPath": "assets/find.png",
+        "pagePath": "pages/ideas/ideas",
+        "text": "想法"
+      },
+      {
+        "selectedIconPath": "assets/market-light.png",
+        "iconPath": "assets/market.png",
+        "pagePath": "pages/market/market",
+        "text": "市场"
+      },
+      {
+        "selectedIconPath": "assets/msg-light.png",
+        "iconPath": "assets/msg.png",
+        "pagePath": "pages/message/message",
+        "text": "消息"
+      },
+      {
+        "selectedIconPath": "assets/more-light.png",
+        "iconPath": "assets/more.png",
+        "pagePath": "pages/more/more",
+        "text": "更多"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}

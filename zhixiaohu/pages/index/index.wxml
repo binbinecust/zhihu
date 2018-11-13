@@ -1,0 +1,32 @@
+<!-- index.wxml -->
+<view>
+  <view class="search-wrapper" wx:if="{{!isSearching}}">
+    <view class="search-input tlc bg-gray boder-1 radius-2" bindtap="clickSearch">
+      <i class="icon icon-sousuo"></i>
+      <text>搜索内容提问</text>
+    </view>
+    <view class="search-button">
+      <image src="../../assets/edit.png" class="search-button-icon" />
+      提问
+    </view>
+    <view class=""></view>
+  </view>
+  <view wx:else>
+    <view class="search-mask show">
+      <view class="search-input-wrapper">
+        <image src="../../assets/search.png" class="search-mask-icon" />
+        <input placeholder="搜索想要知道的内容" class="search-mask-input" placeholder-style="color: #cdcdcd" bindconfirm="searchContent" />
+        <text class="search-mask-cancel">取消</text>
+      </view>
+      <view wx:if="{{searchHistory.length}}">
+        <view class="search-history">搜索历史</view>
+        <view wx:for="{{searchHistory}}">
+          <view>
+            <image src="" />
+            <text>{{item}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

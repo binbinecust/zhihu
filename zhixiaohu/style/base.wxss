@@ -1,0 +1,19 @@
+.tlc {
+  text-align: center;
+}
+
+.boder-none {
+  border: none;
+}
+
+.bg-gray {
+  background: gray;
+}
+
+.border-1 {
+  border: 1px solid gray;
+}
+
+.radius-2 {
+  border-radius: 2rpx;
+}

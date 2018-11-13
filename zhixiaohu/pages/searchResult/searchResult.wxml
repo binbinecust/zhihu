@@ -1,0 +1,4 @@
+<view>
+  <view>搜索结果页</view>
+  <view>搜索关键词：{{search}}</view>
+</view>
